@@ -1,0 +1,52 @@
+body {
+  color: #333;
+}
+
+.well p {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.text-wrapper {
+  position: relative;
+  min-height: 102px;
+}
+.text-wrapper + .text-wrapper {
+  border-top: 1px dotted #999999;
+}
+
+.text-wrapper p:before, .text-wrapper p:after {
+  position: absolute;
+  content: attr(title);
+  display: block;
+  top: 0;
+}
+
+.gradient {
+  color: #681E7A;
+}
+.gradient:before {
+  color: #681E7A;
+  -webkit-mask-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+.gradient:after {
+  color: #317AD6;
+  -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 30%, black);
+}
+
+.rainbow {
+  color: #fff100;
+}
+.rainbow:before {
+  color: #e4007f;
+  -webkit-mask-image: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 60%, black 75%, black 85%, black);
+}
+.rainbow:after {
+  color: #00a0e9;
+  -webkit-mask-image: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0));
+}
+
+.dot {
+  -webkit-mask-image: url(../img/dot.png);
+  color: #e96093;
+}
